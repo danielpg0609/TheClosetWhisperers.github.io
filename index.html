@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renewal Design - Closet Organizing Services</title>
+  <style>
+    /* Add your custom CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("background-image.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+    
+    /* Define your color scheme */
+    :root {
+      --primary-color: #003366;
+      --secondary-color: #ff9900;
+      --accent-color: #ffcc00;
+    }
+    
+    /* Add additional CSS styles as needed */
+    
+    /* Header styles */
+    header {
+      background-color: var(--primary-color);
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    /* Main content styles */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+    }
+    
+    h2 {
+      color: var(--primary-color);
+      margin-top: 30px;
+    }
+    
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    /* Feature section styles */
+    .feature {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    
+    .feature img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    
+    .feature-content {
+      flex: 1;
+    }
+    
+    .feature-content h3 {
+      color: var(--primary-color);
+      margin: 0;
+    }
+    
+    /* Contact form styles */
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    form button {
+      background-color: var(--secondary-color);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    /* Footer styles */
+    footer {
+      background-color: var(--primary-color);
+      padding: 10px;
+      color: white;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Renewal Design</h1>
+    <p>Organizing Closet Services</p>
+  </header>
+  
+  <div class="container">
+    <h2>Welcome to Renewal Design</h2>
+    <p>We provide professional closet organizing services to help you transform your space into a beautifully organized and functional area. With our expertise, attention to detail, and custom solutions, we can create a closet that perfectly matches your style and needs.</p>
+    
+    <h3>Why Choose Us?</h3>
+    <div class="feature">
+      <img src="image1.jpg" alt="Feature 1">
+      <div class="feature-content">
+        <h3>Custom Closet Designs</h3>
+        <p>Our team of experts will work closely with you to create a custom closet design that maximizes storage space and reflects your personal style.</p>
+      </div>
+    </div>
+    
+    <div class="feature">
+      <img src="organizing.jpg" alt="Feature 2">
+      <div class="feature-content">
+        <h3>Efficient Organization Solutions</h3>
+        <p>We utilize smart organization solutions to optimize your closet space, making it easier for you to find and access your belongings.</p>
+      </div>
+    </div>
+    
+    <div class="feature">
+      <img src="close..jpg" alt="Feature 3">
+      <div class="feature-content">
+        <h3>Premium Quality Materials</h3>
+        <p>We only use high-quality materials for our closet installations, ensuring durability and longevity for your custom closet.</p>
+      </div>
+    </div>
+    
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
+  <footer>
+    <p>&copy; 2023 Renewal Design. All rights reserved. | Winter Garden, Florida</p>
+  </footer>
+
+  <script>
+    // Handle form submission
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', handleSubmit);
+
+    function handleSubmit(event) {
+      event.preventDefault();
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+      
+      // Here you can perform further actions with the form data,
+      // such as sending an email or storing it in a database
+      
+      // Reset form fields
+      form.reset();
+    }
+  </script>
+</body>
+</html>
+
